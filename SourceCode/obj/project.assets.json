@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mikkel Hebel\\source\\repos\\WorldOfMath\\WorldOfMath.csproj",
+      "projectUniqueName": "C:\\Users\\Mikkel Hebel\\source\\repos\\WorldOfMath\\SourceCode\\WorldOfMath.csproj",
       "projectName": "WorldOfMath",
-      "projectPath": "C:\\Users\\Mikkel Hebel\\source\\repos\\WorldOfMath\\WorldOfMath.csproj",
+      "projectPath": "C:\\Users\\Mikkel Hebel\\source\\repos\\WorldOfMath\\SourceCode\\WorldOfMath.csproj",
       "packagesPath": "C:\\Users\\Mikkel Hebel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mikkel Hebel\\source\\repos\\WorldOfMath\\obj\\",
+      "outputPath": "C:\\Users\\Mikkel Hebel\\source\\repos\\WorldOfMath\\SourceCode\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mikkel Hebel\\AppData\\Roaming\\NuGet\\NuGet.Config",
