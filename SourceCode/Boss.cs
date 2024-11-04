@@ -6,7 +6,7 @@ public class Boss
     private bool Question; // TODO: Remove this, it's temporary to make the code compile
     
     
-    //Method to attack Player HP, if Player gets answer wrong.
+    //Method to lose HP or deal damage.
     public void DamagePlayer()
     {
         //If the question is answered false
