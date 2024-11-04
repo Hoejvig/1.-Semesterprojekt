@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorldOfMath")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a409957b7d9c0c73bf37ea7c13fe010f2b018868")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62f38cb412f893b6c9cbe284b476f25580bbc2e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorldOfMath")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorldOfMath")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
