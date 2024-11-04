@@ -8,12 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fb4dc84-d8fa-497c-843d-3ec0064695d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WorldOfMath/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WorldOfMath/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WorldOfMath/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WorldOfMath/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WorldOfMath/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WorldOfMath/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WorldOfMath/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CommandGo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CommandGo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Space.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Space.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/World.cs" beforeDir="false" afterPath="$PROJECT_DIR$/World.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +94,7 @@
       <workItem from="1730408053687" duration="651000" />
       <workItem from="1730640631075" duration="3780000" />
       <workItem from="1730716652006" duration="663000" />
-      <workItem from="1730717476605" duration="2475000" />
+      <workItem from="1730717476605" duration="4823000" />
     </task>
     <servers />
   </component>
