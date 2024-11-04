@@ -8,27 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Mikkel Hebel\\.nuget\\packages\\": {}
+    "/Users/jwan/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mikkel Hebel\\source\\repos\\WorldOfMath\\SourceCode\\WorldOfMath.csproj",
+      "projectUniqueName": "/Users/jwan/Documents/GitHub/1.-Semesterprojekt/SourceCode/WorldOfMath.csproj",
       "projectName": "WorldOfMath",
-      "projectPath": "C:\\Users\\Mikkel Hebel\\source\\repos\\WorldOfMath\\SourceCode\\WorldOfMath.csproj",
-      "packagesPath": "C:\\Users\\Mikkel Hebel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mikkel Hebel\\source\\repos\\WorldOfMath\\SourceCode\\obj\\",
+      "projectPath": "/Users/jwan/Documents/GitHub/1.-Semesterprojekt/SourceCode/WorldOfMath.csproj",
+      "packagesPath": "/Users/jwan/.nuget/packages/",
+      "outputPath": "/Users/jwan/Documents/GitHub/1.-Semesterprojekt/SourceCode/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Mikkel Hebel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/jwan/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -67,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
