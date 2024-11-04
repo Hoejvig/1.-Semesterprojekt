@@ -5,7 +5,7 @@ public class Boss
     public static int HealthPoints = 100;
     
     
-    //Method to attack Player HP, if Player gets answer wrong.
+    //Method to lose HP or deal damage.
     public void DamagePlayer()
     {
         //If the question is answered false
