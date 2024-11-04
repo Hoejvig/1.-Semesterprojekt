@@ -6,7 +6,7 @@ class World {
   
   public World () {
     Space entry    = new Space("Entry");
-    Space corridor = new Space("Corridor", question:"2+2", answer:"4");
+    Space corridor = new Space("Corridor", "2+2", "4");
     Space cave     = new Space("Cave");
     Space pit      = new Space("Darkest Pit");
     Space outside  = new Space("Outside");
