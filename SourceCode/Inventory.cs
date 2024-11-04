@@ -27,7 +27,7 @@ public class Inventory
     {
         if (NextOpenIndex < items.Length)
         {
-            items[NextOpenIndex] = Badge;
+            items[NextOpenIndex] = Item;
         }
         NextOpenIndex++;
     }
