@@ -3,6 +3,7 @@ public class Boss
 {
     //Attributes
     public static int HealthPoints = 100;
+    private bool Question; // TODO: Remove this, it's temporary to make the code compile
     
     
     //Method to attack Player HP, if Player gets answer wrong.
