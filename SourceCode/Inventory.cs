@@ -2,11 +2,13 @@ namespace WorldOfMath;
 
 public class Inventory
 {
+
     
     // Array for storing badges
     public Item[] items = new Item[5];
     
     // Method to show inventory
+
     public void ShowInventory () 
     {
         Console.WriteLine("Inventory:");
