@@ -8,6 +8,15 @@ SourceCode/.idea/
 .DS_Store
 .idea/
 
+# Ignore build outputs
+obj/
+bin/
+
+# Ignore NuGet related files
+*.nuget.cache
+project.assets.json
+*.dgspec.json
+
 
 # User-specific files
 *.rsuser
