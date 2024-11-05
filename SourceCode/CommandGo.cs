@@ -14,7 +14,14 @@ class CommandGo : BaseCommand, ICommand {
 
     if (context.GetCurrent().solved == true)
     {
-      context.Transition(parameters[0]);
+      try
+      {
+        context.Transition(parameters[0]);
+      }
+      catch (System.Collections.Generic.KeyNotFoundException)
+      {
+        Console.WriteLine("That doesn't seem right. Try again.");
+      }
     }
     else
     {
