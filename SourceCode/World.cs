@@ -22,32 +22,51 @@ class World {
     Space door2task5 = new Space("Task5", "8+2","10");
     Space door2task6 = new Space("Task6" ,"8-2" ,"6" );
     
-        //Corridor and Edges in door2
-    
-        door2.AddEdge("Task1",door2task1);
-        door2task1.AddEdge("Task2",door2task2);
-        door2task2.AddEdge("Task3",door2task3);
-        door2task3.AddEdge("Task4", door2task4);
-        door2task4.AddEdge("Task5",door2task5);
-        door2task5.AddEdge("Task6",door2task6);
-
-    // Greater than less than
+    // Greater than or less than
     Space door3     = new Space("Greater_than_less than");
+    Space door3task1 = new Space("Task1", "Are 5 'greater' or 'less' than 3", "greater");
+    Space door3task2 = new Space("Task2", "Is this equation '3>1' 'correct' or 'false'", "correct");
+    Space door3task3 = new Space("Task3", "Are 3 'greater' or 'less' than 5", "less");
+    Space door3task4 = new Space("Task4", "Is this equation '7<3' 'correct' or 'false'", "false");
+    Space door3task5 = new Space("Task5", "Is this equation '3>5' 'correct' or 'false'", "false");
+    Space door3task6 = new Space("Task6", "Are 3 'greater' or 'equal' or 'less' than 5?", "equal");
     
     // Double and half
     Space door4     = new Space("Double_and_half");
     
+    
+    // Edges
     entry.AddEdge("door", corridor);
     
     // Corridor
     corridor.AddEdge("Number_recognition", door1);
     corridor.AddEdge("Addition_and_subtraktion", door2);
-    corridor.AddEdge("Greather_than_less_than", door3);
+    corridor.AddEdge("Greater_than_less_than", door3);
     corridor.AddEdge("Double_and_half", door4);
     
     // Number recognition
     door1.AddEdge("Task1", door1task1);
     door1task1.AddEdge("Task2", door1task2);
+  
+    // Corridor and Edges in door2
+    door2.AddEdge("Task1",door2task1);
+    door2task1.AddEdge("Task2",door2task2);
+    door2task2.AddEdge("Task3",door2task3);
+    door2task3.AddEdge("Task4", door2task4);
+    door2task4.AddEdge("Task5",door2task5);
+    door2task5.AddEdge("Task6",door2task6);
+    
+    // Greater than or Less than tasks
+    door3.AddEdge("Task1", door3task1);
+    door3task1.AddEdge("Task2", door3task2);
+    door3task2.AddEdge("Task3", door3task3);
+    door3task3.AddEdge("Task4", door3task4);
+    door3task4.AddEdge("Task5", door3task5);
+    door3task5.AddEdge("Task6", door3task6);
+    
+     /*Remove comment when boss is implementet.
+       door3task6.AddEdge("BOSS", door3Boss); 
+      */
     
     this.entry = entry;
   }
