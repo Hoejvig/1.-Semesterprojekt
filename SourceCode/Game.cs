@@ -14,10 +14,16 @@ class Game {
     registry.Register("bye", cmdExit);
     registry.Register("go", new CommandGo());
     registry.Register("help", new CommandHelp(registry));
+    registry.Register("solve", new CommandSolve());
   }
   
   static void Main (string[] args) {
-    Console.WriteLine("Welcome to the World of Zuul!");
+    Console.WriteLine("Welcome to World of Math!");
+    Console.WriteLine("A fantastic game about learning mathematics through a interactive game.");
+    Console.WriteLine("");
+    Console.WriteLine("Use 'go' to move between rooms.");
+    Console.WriteLine("Use 'help' for a list of commands.");
+    Console.WriteLine("");
     
     InitRegistry();
     context.GetCurrent().Welcome();

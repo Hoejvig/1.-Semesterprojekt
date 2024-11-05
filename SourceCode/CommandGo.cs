@@ -8,9 +8,17 @@ class CommandGo : BaseCommand, ICommand {
   
   public void Execute (Context context, string command, string[] parameters) {
     if (GuardEq(parameters, 1)) {
-      Console.WriteLine("I don't seem to know where that is 🤔");
+      Console.WriteLine("I don't seem to know where that is. Correct usage: go <space>");
       return;
     }
-    context.Transition(parameters[0]);
+
+    if (context.GetCurrent().solved == true)
+    {
+      context.Transition(parameters[0]);
+    }
+    else
+    {
+      Console.WriteLine("You haven't solved the question yet!");
+    }
   }
 }
