@@ -3,6 +3,12 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+SourceCode/.idea/
+/SourceCode/.idea/
+.DS_Store
+.idea/
+
+
 # User-specific files
 *.rsuser
 *.suo

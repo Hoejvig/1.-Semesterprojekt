@@ -1,9 +1,9 @@
-﻿# Default ignored files
+# Default ignored files
 /shelf/
 /workspace.xml
 # Rider ignored files
+/.idea.WorldOfMath.iml
 /projectSettingsUpdater.xml
-/.idea.World Of Math.iml
 /modules.xml
 /contentModel.xml
 # Editor-based HTTP Client requests
@@ -11,3 +11,7 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+SourceCode/.idea/
+/SourceCode/.idea/
+.DS_Store
+.idea/
