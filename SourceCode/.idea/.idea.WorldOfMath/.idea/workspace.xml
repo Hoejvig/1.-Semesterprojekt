@@ -7,13 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb4dc84-d8fa-497c-843d-3ec0064695d2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WorldOfMath/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WorldOfMath/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WorldOfMath/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WorldOfMath/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WorldOfMath/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WorldOfMath/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/World.cs" beforeDir="false" afterPath="$PROJECT_DIR$/World.cs" afterDir="false" />
-    </list>
+    <list default="true" id="0fb4dc84-d8fa-497c-843d-3ec0064695d2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +84,7 @@
       <workItem from="1730716652006" duration="663000" />
       <workItem from="1730717476605" duration="4823000" />
       <workItem from="1730746979011" duration="1351000" />
-      <workItem from="1730797939090" duration="327000" />
+      <workItem from="1730797939090" duration="631000" />
     </task>
     <servers />
   </component>
