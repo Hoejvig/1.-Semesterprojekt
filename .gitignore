@@ -399,7 +399,4 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-SourceCode/.idea/
-SourceCode/obj/
-.idea/
-obj/
+

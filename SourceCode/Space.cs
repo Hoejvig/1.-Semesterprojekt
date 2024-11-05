@@ -11,6 +11,10 @@ class Space : Node
   {
     this.question = question;
     this.answer = answer;
+    if (question == "")
+    {
+      solved = true;
+    }
   }
   
   public void Welcome () {

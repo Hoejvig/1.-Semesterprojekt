@@ -23,11 +23,11 @@ public class Inventory
     
     
     // Method to add badges after boss fight
-    public void AddItem(Item Item)
+   public void AddItem(Item Item)
     {
         if (NextOpenIndex < items.Length)
         {
-            items[NextOpenIndex] = Item;
+            items[NextOpenIndex] = Badge; 
         }
         NextOpenIndex++;
     }
