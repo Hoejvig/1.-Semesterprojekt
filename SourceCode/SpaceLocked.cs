@@ -1,0 +1,6 @@
+﻿namespace WorldOfMath;
+
+class SpaceLocked
+{
+    
+}

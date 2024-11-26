@@ -9,31 +9,31 @@ class World {
     Space corridor = new Space("Corridor");
     
     // Addition
-    Space door1    = new Space("Addition", "1+1", "2");
-    Space door1task1 = new Space("Task1 ", "2+3","5");
-    Space door1task2 = new Space("Task2","1+3","4");
-    Space door1task3 = new Space("Task3","2+2","4");
-    Space door1task4 = new Space ("Task4","2+1","3");
-    Space door1task5 = new Space("Task5", "5+4","9");
-    Space door1task6 = new Space("Task6" ,"3+3" ,"6");
+    SpaceQuestion door1    = new SpaceQuestion("Addition", "1+1", "2");
+    SpaceQuestion door1task1 = new SpaceQuestion("Task1 ", "2+3","5");
+    SpaceQuestion door1task2 = new SpaceQuestion("Task2","1+3","4");
+    SpaceQuestion door1task3 = new SpaceQuestion("Task3","2+2","4");
+    SpaceQuestion door1task4 = new SpaceQuestion("Task4","2+1","3");
+    SpaceQuestion door1task5 = new SpaceQuestion("Task5", "5+4","9");
+    SpaceQuestion door1task6 = new SpaceQuestion("Task6" ,"3+3" ,"6");
     
     //Subtraction
-    Space door2    = new Space("Subtraction", "2-1", "1");
-    Space door2task1 = new Space("Task1 ", "61","5");
-    Space door2task2 = new Space("Task2","10-6","4");
-    Space door2task3 = new Space("Task3","8-6","2");
-    Space door2task4 = new Space ("Task4","13-3","10");
-    Space door2task5 = new Space("Task5", "12-2","10");
-    Space door2task6 = new Space("Task6" ,"12-6","6");
+    SpaceQuestion door2    = new SpaceQuestion("Subtraction", "2-1", "1");
+    SpaceQuestion door2task1 = new SpaceQuestion("Task1 ", "61","5");
+    SpaceQuestion door2task2 = new SpaceQuestion("Task2","10-6","4");
+    SpaceQuestion door2task3 = new SpaceQuestion("Task3","8-6","2");
+    SpaceQuestion door2task4 = new SpaceQuestion("Task4","13-3","10");
+    SpaceQuestion door2task5 = new SpaceQuestion("Task5", "12-2","10");
+    SpaceQuestion door2task6 = new SpaceQuestion("Task6" ,"12-6","6");
     
     // Greater than
     Space door3     = new Space("Greater_than");
-    Space door3task1 = new Space("Task1", "Which number is biggest, 19 or 29", "29");
-    Space door3task2 = new Space("Task2", "Which number is biggest, 22 or 12", "22");
-    Space door3task3 = new Space("Task3", "Which number is biggest, 40 or 49", "49");
-    Space door3task4 = new Space("Task4", "Which number is biggest, 50 or 60", "60");
-    Space door3task5 = new Space("Task5", "Which number is biggest, 88 or 80", "88");
-    Space door3task6 = new Space("Task6", "Which number is biggest, 32 or 37", "37");
+    SpaceQuestion door3task1 = new SpaceQuestion("Task1", "Which number is biggest, 19 or 29", "29");
+    SpaceQuestion door3task2 = new SpaceQuestion("Task2", "Which number is biggest, 22 or 12", "22");
+    SpaceQuestion door3task3 = new SpaceQuestion("Task3", "Which number is biggest, 40 or 49", "49");
+    SpaceQuestion door3task4 = new SpaceQuestion("Task4", "Which number is biggest, 50 or 60", "60");
+    SpaceQuestion door3task5 = new SpaceQuestion("Task5", "Which number is biggest, 88 or 80", "88");
+    SpaceQuestion door3task6 = new SpaceQuestion("Task6", "Which number is biggest, 32 or 37", "37");
     
     // Edges
     entry.AddEdge("door", corridor);

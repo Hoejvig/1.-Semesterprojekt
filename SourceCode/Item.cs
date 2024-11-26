@@ -1,14 +1,9 @@
-namespace WorldOfMath;
-
-
 public class Item
 {
-    //Attributes 
     public string ItemName; 
-
-    //consructor
-    public Item(string ItemName)
+    
+    public Item(string name)
     {
-        this.ItemName = ItemName;
+        ItemName = name;
     }
 }

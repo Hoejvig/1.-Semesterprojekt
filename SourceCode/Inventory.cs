@@ -1,20 +1,11 @@
-namespace WorldOfMath;
-
 public class Inventory
 {
-    private Item[] items;
-    
-    public Inventory (Item[] items) {
-        this.items = items;
-    }
-
-    public Inventory () : this(new Item[0]) {
-    }
+    private Item[] _items;
     
     public void ShowInventory () 
     {
         Console.WriteLine("Inventory:");
-        foreach (Item item in items) 
+        foreach (Item item in _items) 
         {
             Console.WriteLine(" - " + item);
         }

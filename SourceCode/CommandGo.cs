@@ -11,21 +11,30 @@ class CommandGo : BaseCommand, ICommand {
       Console.WriteLine("I don't seem to know where that is. Correct usage: go <space>");
       return;
     }
+    
+    var currentSpace = context.GetCurrent();
 
-    if (context.GetCurrent().solved == true)
+    if (currentSpace is SpaceQuestion spaceQuestion)
     {
-      try
+      if (spaceQuestion.Solved == true)
       {
-        context.Transition(parameters[0]);
+        try
+        {
+          context.Transition(parameters[0]);
+        }
+        catch (System.Collections.Generic.KeyNotFoundException)
+        {
+          Console.WriteLine("That doesn't seem right. Try again.");
+        }
       }
-      catch (System.Collections.Generic.KeyNotFoundException)
+      else
       {
-        Console.WriteLine("That doesn't seem right. Try again.");
+        Console.WriteLine("You haven't solved the question yet!");
       }
     }
     else
     {
-      Console.WriteLine("You haven't solved the question yet!");
+      context.Transition(parameters[0]);
     }
   }
 }
