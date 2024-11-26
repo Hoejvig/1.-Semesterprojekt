@@ -1,11 +1,17 @@
 public class Inventory
 {
-    private Item[] _items;
+    // Initialize a list of items.
+    public List<Item> Items = new List<Item>();
+
+    public void AddItem(Item item)
+    {
+        Items.Add(item);
+    }
     
     public void ShowInventory () 
     {
         Console.WriteLine("Inventory:");
-        foreach (Item item in _items) 
+        foreach (Item item in Items) 
         {
             Console.WriteLine(" - " + item);
         }
