@@ -6,7 +6,7 @@ class World {
   
   public World () {
     Space entry    = new Space("Entry");
-    Space corridor = new Space("Corridor");
+    Space corridor = new Space("Corridor", "Here you can choose between multiple doors.\\That all end up at different places.");
     
     // Addition
     SpaceQuestion door1    = new SpaceQuestion("Addition", "1+1", "2");
@@ -17,7 +17,7 @@ class World {
     SpaceQuestion door1task5 = new SpaceQuestion("Task5", "5+4","9");
     SpaceQuestion door1task6 = new SpaceQuestion("Task6" ,"3+3" ,"6");
     
-    //Subtraction
+    // Subtraction
     SpaceQuestion door2    = new SpaceQuestion("Subtraction", "2-1", "1");
     SpaceQuestion door2task1 = new SpaceQuestion("Task1 ", "61","5");
     SpaceQuestion door2task2 = new SpaceQuestion("Task2","10-6","4");
