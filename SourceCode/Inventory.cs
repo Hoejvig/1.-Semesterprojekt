@@ -1,7 +1,7 @@
 public class Inventory
 {
     // Initialize a list of items.
-    public List<Item> Items = new List<Item>();
+    public List<Item> Items = new();
 
     public void AddItem(Item item)
     {
@@ -13,7 +13,7 @@ public class Inventory
         Console.WriteLine("Inventory:");
         foreach (Item item in Items) 
         {
-            Console.WriteLine(" - " + item);
+            Console.WriteLine(" - " + item.ItemName);
         }
     }
 }

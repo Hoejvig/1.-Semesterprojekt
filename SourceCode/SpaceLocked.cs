@@ -1,19 +1,23 @@
-﻿namespace WorldOfMath;
-
-class SpaceLocked : Space
+﻿class SpaceLocked : Space
 {
-    private Item _item;
+    private String _requiredItemName;
+    private Node _edge;
     
-    public SpaceLocked (String name, Item item) : base(name)
+    public SpaceLocked (String name, String requiredItemName, Node edge) : base(name)
     {
-        _item = item;
+        _requiredItemName = requiredItemName;
+        _edge = edge;
     }
   
     public override void Welcome () {
-        Console.WriteLine("You are now at "+name);
-        Console.WriteLine("This is a locked room and you need " + _item + " to proceed.");
-        if (Game.inventory.Items.Contains(_item))
+        // Check if any item in the inventory matches the required item name
+        // Since Items is a List we can use IEnumerable methods.
+        bool hasRequiredItem = Game.inventory.Items.Any(item => item.ItemName == _requiredItemName);
+
+        if (hasRequiredItem)
         {
+            Console.WriteLine("You are now at "+name);
+            this.AddEdge("Exit", _edge);
             HashSet<string> exits = edges.Keys.ToHashSet();
     
             Console.WriteLine("Current exits are:");
@@ -23,8 +27,8 @@ class SpaceLocked : Space
         }
         else
         {
-            Console.WriteLine("You don't have " + _item);
-            
+            Console.WriteLine($"This is a locked room and you need '{_requiredItemName}' to proceed.");
+            Console.WriteLine($"You don't have the item '{_requiredItemName}'");
         }
         
     }

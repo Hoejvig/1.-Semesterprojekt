@@ -16,6 +16,8 @@ class World {
     SpaceQuestion door1task4 = new SpaceQuestion("Task4","2+1","3");
     SpaceQuestion door1task5 = new SpaceQuestion("Task5", "5+4","9");
     SpaceQuestion door1task6 = new SpaceQuestion("Task6" ,"3+3" ,"6");
+    SpaceLocked lane = new SpaceLocked("Lane", "Addition Emblem", door1task6);
+    corridor.AddEdge("Lane", lane);
     
     // Subtraction
     SpaceQuestion door2    = new SpaceQuestion("Subtraction", "2-1", "1");

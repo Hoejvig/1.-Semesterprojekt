@@ -4,7 +4,7 @@ class Space : Node
 {
   private string _text;
   
-  public Space (String name, String text = "") : base(name)
+  public Space (String name, String text = null) : base(name)
   {
     _text = text;
   }

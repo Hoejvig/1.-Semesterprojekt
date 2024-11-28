@@ -27,6 +27,7 @@ class Game {
     Console.WriteLine("Use 'go' to move between rooms.");
     Console.WriteLine("Use 'help' for a list of commands.");
     Console.WriteLine("");
+    inventory.AddItem(new Item("Addition Emblem"));
     
     InitRegistry();
     context.GetCurrent().Welcome();
