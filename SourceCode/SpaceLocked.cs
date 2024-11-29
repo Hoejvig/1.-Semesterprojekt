@@ -18,12 +18,6 @@
         {
             Console.WriteLine("You are now at "+name);
             this.AddEdge("Exit", _edge);
-            HashSet<string> exits = edges.Keys.ToHashSet();
-    
-            Console.WriteLine("Current exits are:");
-            foreach (String exit in exits) {
-                Console.WriteLine(" - "+exit);
-            }
         }
         else
         {
@@ -31,5 +25,11 @@
             Console.WriteLine($"You don't have the item '{_requiredItemName}'");
         }
         
+        HashSet<string> exits = edges.Keys.ToHashSet();
+    
+        Console.WriteLine("Current exits are:");
+        foreach (String exit in exits) {
+            Console.WriteLine(" - "+exit);
+        }
     }
 }

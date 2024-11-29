@@ -16,8 +16,19 @@ class World {
     SpaceQuestion door1task4 = new SpaceQuestion("Task4","2+1","3");
     SpaceQuestion door1task5 = new SpaceQuestion("Task5", "5+4","9");
     SpaceQuestion door1task6 = new SpaceQuestion("Task6" ,"3+3" ,"6");
+    
+    // Locked Space
     SpaceLocked lane = new SpaceLocked("Lane", "Addition Emblem", door1task6);
     corridor.AddEdge("Lane", lane);
+    lane.AddEdge("corridor", corridor);
+
+    // Creating the Boss Space
+    string[] questions = { "What is 5 + 3?", "What is 10 - 4?", "What is 7 * 2?", "What is 9 / 3?" };
+    string[] answers = { "8", "6", "14", "3" };
+    
+    SpaceBoss bossRoom = new SpaceBoss("Boss_Room", new Item("Addition Emblem"), 100, questions, answers);
+    corridor.AddEdge("Boss_Room", bossRoom);
+    bossRoom.AddEdge("corridor", corridor);
     
     // Subtraction
     SpaceQuestion door2    = new SpaceQuestion("Subtraction", "2-1", "1");

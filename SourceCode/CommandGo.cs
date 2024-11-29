@@ -34,7 +34,14 @@ class CommandGo : BaseCommand, ICommand {
     }
     else
     {
-      context.Transition(parameters[0]);
+      try
+      {
+        context.Transition(parameters[0]);
+      }
+      catch (System.Collections.Generic.KeyNotFoundException)
+      {
+        Console.WriteLine("That doesn't seem right. Try again.");
+      }
     }
   }
 }
