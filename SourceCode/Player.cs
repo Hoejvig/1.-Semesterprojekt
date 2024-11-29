@@ -1,12 +1,5 @@
-﻿namespace DefaultNamespace;
-public class Player
+﻿public static class Player
 {
-    public string name;
+    public static string Name;
     public static int HealthPoints = 100;
-
-    public Player(string name)
-    {
-        this.name = name;
-    }
-
 }

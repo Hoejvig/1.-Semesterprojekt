@@ -11,8 +11,28 @@ class CommandGo : BaseCommand, ICommand {
       Console.WriteLine("I don't seem to know where that is. Correct usage: go <space>");
       return;
     }
+    
+    var currentSpace = context.GetCurrent();
 
-    if (context.GetCurrent().solved == true)
+    if (currentSpace is SpaceQuestion spaceQuestion)
+    {
+      if (spaceQuestion.Solved == true)
+      {
+        try
+        {
+          context.Transition(parameters[0]);
+        }
+        catch (System.Collections.Generic.KeyNotFoundException)
+        {
+          Console.WriteLine("That doesn't seem right. Try again.");
+        }
+      }
+      else
+      {
+        Console.WriteLine("You haven't solved the question yet!");
+      }
+    }
+    else
     {
       try
       {
@@ -22,10 +42,6 @@ class CommandGo : BaseCommand, ICommand {
       {
         Console.WriteLine("That doesn't seem right. Try again.");
       }
-    }
-    else
-    {
-      Console.WriteLine("You haven't solved the question yet!");
     }
   }
 }

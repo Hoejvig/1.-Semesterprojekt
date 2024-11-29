@@ -6,6 +6,8 @@ class Game {
   static Context  context  = new Context(world.GetEntry());
   static ICommand fallback = new CommandUnknown();
   static Registry registry = new Registry(context, fallback);
+
+  public static Inventory inventory = new Inventory();
   
   private static void InitRegistry () {
     ICommand cmdExit = new CommandExit();
@@ -15,6 +17,7 @@ class Game {
     registry.Register("go", new CommandGo());
     registry.Register("help", new CommandHelp(registry));
     registry.Register("solve", new CommandSolve());
+    registry.Register("inventory", new CommandInventory());
   }
   
   static void Main (string[] args) {
