@@ -10,7 +10,9 @@
         Answer = answer;
     }
   
-    public override void Welcome () {
+    public override void Welcome ()
+    {
+        Console.WriteLine("");
         Console.WriteLine("You are now at "+name);
         if (_question != "" && Solved == false)
         {
