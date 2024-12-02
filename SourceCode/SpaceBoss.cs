@@ -45,6 +45,8 @@
                 Console.WriteLine("Your answer: ");
                 string playerAnswer = Console.ReadLine();
 
+                // Make the input & answer lower case.
+                // Trim: Removes all leading and trailing white-space characters from the current string.
                 if (playerAnswer.Trim().ToLower() == correctAnswer.Trim().ToLower())
                 {
                     Console.WriteLine("Correct! The boss loses 25 HP.");
@@ -78,11 +80,8 @@
             }
         }
 
-        // If the battle was won
-        if (_healthPoints <= 0)
-        {
-            Goodbye(); // Award item to player
-        }
+        // When battle is over
+        Goodbye(); // Award item to player
     }
 
     public override void Goodbye ()
@@ -92,6 +91,10 @@
             Game.inventory.AddItem(_item);
             _solved = true;
             Console.WriteLine("You've defeated the boss and gained an item! Use the command 'inventory' to check which.");
+        }
+        else
+        {
+            Console.WriteLine("Unlucky!! You didn't win!");
         }
     }
 }

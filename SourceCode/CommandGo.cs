@@ -12,12 +12,15 @@ class CommandGo : BaseCommand, ICommand {
       return;
     }
     
+    // var - fordi rummet kan være 4 datatyper
     var currentSpace = context.GetCurrent();
 
+    // Vi tester om currentspace er datatypen SpaceQuestion
     if (currentSpace is SpaceQuestion spaceQuestion)
     {
       if (spaceQuestion.Solved == true)
       {
+        // Try catch som fixer at programmet crasher hvis man prøver at gå ind i et rum som ikke eksistere.
         try
         {
           context.Transition(parameters[0]);
@@ -34,6 +37,7 @@ class CommandGo : BaseCommand, ICommand {
     }
     else
     {
+      // Try catch som fixer at programmet crasher hvis man prøver at gå ind i et rum som ikke eksistere.
       try
       {
         context.Transition(parameters[0]);
