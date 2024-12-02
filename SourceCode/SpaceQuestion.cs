@@ -15,7 +15,7 @@
         if (_question != "" && Solved == false)
         {
             Console.WriteLine("There's a math question in here!");
-            Console.WriteLine("{0}", _question);
+            Console.WriteLine($"{_question}");
             Console.WriteLine("Use 'solve <answer>' when you think you got it");
         }
         HashSet<string> exits = edges.Keys.ToHashSet();

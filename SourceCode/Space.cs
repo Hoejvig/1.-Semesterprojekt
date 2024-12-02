@@ -12,6 +12,7 @@ class Space : Node
   public virtual void Welcome () {
     Console.WriteLine("You are now at "+name);
 
+    // Check if _text is not null
     if (_text != null)
     {
       String[] parts = _text.Split('\\');
@@ -21,8 +22,8 @@ class Space : Node
       }
     }
     
+    // 
     HashSet<string> exits = edges.Keys.ToHashSet();
-    
     Console.WriteLine("Current exits are:");
     foreach (String exit in exits) {
       Console.WriteLine(" - "+exit);
