@@ -2,7 +2,7 @@
  */
 
 class World {
-  Space entry;
+  private Space entry;
   
   public World () {
     Space entry    = new Space("Entry");

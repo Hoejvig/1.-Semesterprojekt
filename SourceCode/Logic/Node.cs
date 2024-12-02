@@ -1,15 +1,15 @@
 // Node class for modeling graphs
 
 class Node {
-  protected string name;
+  protected string Name;
   protected Dictionary<string, Node> edges = new Dictionary<string, Node>();
   
   public Node (string name) {
-    this.name = name;
+    this.Name = name;
   }
   
   public String GetName () {
-    return name;
+    return Name;
   }
   
   public void AddEdge (string name, Node node) {
