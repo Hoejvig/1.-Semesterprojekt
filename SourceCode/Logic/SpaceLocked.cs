@@ -16,7 +16,7 @@
 
         if (hasRequiredItem)
         {
-            Console.WriteLine("You are now at "+name);
+            Console.WriteLine("You are now at "+Name);
             this.AddEdge("Exit", _edge);
         }
         else
