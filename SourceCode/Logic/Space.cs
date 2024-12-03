@@ -11,7 +11,7 @@ class Space : Node
   
   public virtual void Welcome () {
     Console.WriteLine("");
-    Console.WriteLine("You are now at "+name);
+    Console.WriteLine("You are now at "+Name);
 
     // Check if _text is not null
     if (_text != null)

@@ -13,8 +13,8 @@
     public override void Welcome ()
     {
         Console.WriteLine("");
-        Console.WriteLine("You are now at "+name);
-        if Solved == false)
+        Console.WriteLine("You are now at "+Name);
+        if (Solved == false)
         {
             Console.WriteLine("There's a math question in here!");
             Console.WriteLine($"{_question}");

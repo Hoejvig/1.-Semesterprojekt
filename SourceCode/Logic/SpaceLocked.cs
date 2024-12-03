@@ -18,8 +18,15 @@
 
         if (hasRequiredItem)
         {
-            Console.WriteLine("You are now at "+name);
-            this.AddEdge("Next_door", _edge);
+            Console.WriteLine("You are now at " + Name);
+            try
+            {
+                this.AddEdge("Next_door", _edge);
+            }
+            catch (System.ArgumentException)
+            {
+
+            }
         }
         else
         {
