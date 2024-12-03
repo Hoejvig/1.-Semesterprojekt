@@ -16,6 +16,7 @@
     }
     
     public override void Welcome () {
+        Console.WriteLine("");
         Console.WriteLine("This room is a boss fight, you need to complete a series of questions to complete this room.");
         
         if (_healthPoints > 0 && !_solved)

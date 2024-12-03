@@ -9,15 +9,17 @@
         _edge = edge;
     }
   
-    public override void Welcome () {
+    public override void Welcome ()
+    {
+        Console.WriteLine("");
         // Check if any item in the inventory matches the required item name
         // Since Items is a List we can use IEnumerable methods.
         bool hasRequiredItem = Game.inventory.Items.Any(item => item.ItemName == _requiredItemName);
 
         if (hasRequiredItem)
         {
-            Console.WriteLine("You are now at "+Name);
-            this.AddEdge("Exit", _edge);
+            Console.WriteLine("You are now at "+name);
+            this.AddEdge("Next_door", _edge);
         }
         else
         {

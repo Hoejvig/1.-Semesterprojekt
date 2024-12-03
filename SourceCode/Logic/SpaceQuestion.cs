@@ -10,9 +10,11 @@
         _answer = answer;
     }
   
-    public override void Welcome () {
-        Console.WriteLine("You are now at "+Name);
-        while (Solved == false)
+    public override void Welcome ()
+    {
+        Console.WriteLine("");
+        Console.WriteLine("You are now at "+name);
+        if Solved == false)
         {
             Console.WriteLine("There's a math question in here!");
             Console.WriteLine($"{_question}");
