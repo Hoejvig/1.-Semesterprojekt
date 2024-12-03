@@ -32,6 +32,7 @@
     
     private void StartBattle()
     {
+        Player.HealthPoints = 100;
         while (_healthPoints > 0 && Player.HealthPoints > 0)
         {
             for (int i = 0; i < _questions.Length; i++)
@@ -79,16 +80,15 @@
                 break;
             }
         }
-
-        // When battle is over
-        Goodbye(); // Award item to player
     }
 
     public override void Goodbye ()
     {
         if (_healthPoints <= 0)
         {
-            Game.inventory.AddItem(_item);
+            if (!Game.inventory.Items.Contains(_item)) {
+                Game.inventory.AddItem(_item);
+            }
             _solved = true;
             Console.WriteLine("You've defeated the boss and gained an item! Use the command 'inventory' to check which.");
         }
