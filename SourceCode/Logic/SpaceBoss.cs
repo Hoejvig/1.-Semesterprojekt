@@ -2,8 +2,8 @@
 {
     private Item _item;
     private int _healthPoints;
-    private String[] _questions;
-    private String[] _answers;
+    private readonly String[] _questions;
+    private readonly String[] _answers;
     private bool _solved;
     
     public SpaceBoss(String name, Item item, int healthPoints, String[] questions, String[] answers) : base(name)
