@@ -1,11 +1,11 @@
-﻿class SpaceBoss : Space
+class SpaceBoss : Space
 {
     private Item _item;
     private int _healthPoints;
-    private readonly String[] _questions;
-    private readonly String[] _answers;
+    private String[] _questions;
+    private String[] _answers;
     private bool _solved;
-    
+
     public SpaceBoss(String name, Item item, int healthPoints, String[] questions, String[] answers) : base(name)
     {
         _item = item;
@@ -14,25 +14,28 @@
         _answers = answers;
         _solved = false;
     }
-    
-    public override void Welcome () {
-        Console.WriteLine("");
-        Console.WriteLine("This room is a boss fight, you need to complete a series of questions to complete this room.");
-        
+
+    public override void Welcome()
+    {
+        Console.WriteLine(
+            "This room is a boss fight, you need to complete a series of questions to complete this room.");
+
         if (_healthPoints > 0 && !_solved)
         {
             StartBattle();
         }
-        
+
         HashSet<string> exits = edges.Keys.ToHashSet();
         Console.WriteLine("Current exits are:");
-        foreach (String exit in exits) {
-            Console.WriteLine(" - "+exit);
+        foreach (String exit in exits)
+        {
+            Console.WriteLine(" - " + exit);
         }
     }
-    
+
     private void StartBattle()
     {
+        Player.HealthPoints = 100;
         while (_healthPoints > 0 && Player.HealthPoints > 0)
         {
             for (int i = 0; i < _questions.Length; i++)
@@ -80,18 +83,20 @@
                 break;
             }
         }
-
-        // When battle is over
-        Goodbye(); // Award item to player
     }
 
-    public override void Goodbye ()
+    public override void Goodbye()
     {
         if (_healthPoints <= 0)
         {
-            Game.inventory.AddItem(_item);
+            if (!Game.inventory.Items.Contains(_item))
+            {
+                Game.inventory.AddItem(_item);
+            }
+
             _solved = true;
-            Console.WriteLine("You've defeated the boss and gained an item! Use the command 'inventory' to check which.");
+            Console.WriteLine(
+                "You've defeated the boss and gained an item! Use the command 'inventory' to check which.");
         }
         else
         {
