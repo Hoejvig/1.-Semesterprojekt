@@ -14,9 +14,9 @@
     {
         Console.WriteLine("");
         Console.WriteLine("You are now at "+Name);
-        if (Solved == false)
+        Console.WriteLine("There's a math question in here!");
+        while (Solved == false)
         {
-            Console.WriteLine("There's a math question in here!");
             Console.WriteLine($"{_question}");
             Console.WriteLine("Type your answer when you think you got it");
             string playerAnswer = Console.ReadLine();
@@ -29,6 +29,7 @@
             else
             {
                 Console.WriteLine("That doesn't seem right");
+                
             }
         }
         HashSet<string> exits = edges.Keys.ToHashSet();
