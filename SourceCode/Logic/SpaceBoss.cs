@@ -96,7 +96,7 @@ class SpaceBoss : Space
 
             _solved = true;
             Console.WriteLine(
-                "You've defeated the boss and gained an item! Use the command 'inventory' to check which.");
+                "You've defeated the boss and gained an item! Use the command 'inv' to check which.");
         }
         else
         {
